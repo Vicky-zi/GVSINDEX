@@ -1,0 +1,154 @@
+@import "../scss/bootstrap/scss/bootstrap";
+
+// Configuration
+@import "../scss/bootstrap/scss/functions";
+@import "../scss/bootstrap/scss/variables";
+@import "../scss/bootstrap/scss/mixins";
+@import "../scss/bootstrap/scss/utilities";
+
+// Layout & components
+@import "../scss/bootstrap/scss/root";
+@import "../scss/bootstrap/scss/reboot";
+@import "../scss/bootstrap/scss/images";
+@import "../scss/bootstrap/scss/grid";
+@import "../scss/bootstrap/scss/buttons";
+@import "../scss/bootstrap/scss/button-group";
+
+
+// Helpers
+@import "../scss/bootstrap/scss/helpers";
+
+// Utilities
+@import "../scss/bootstrap/scss/utilities/api";
+
+
+body {
+    /* height: 100vh; */
+    // overflow: hidden;
+    font-family:Microsoft JhengHei;
+}
+
+.bg-cover {
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.text-s {
+    font-size: 12px;
+}
+
+.text-decoration {
+    text-decoration: none;
+}
+
+.head-title {
+    background-image: url('../img/logo.png');
+    width: 30px;
+    height: 24px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* @media (max-width:1024px) {
+    .box-h {
+        height: 1000vh;
+    }
+} */
+
+.bg-image {
+    /* max-width:100%; */
+    height: auto;
+    background-size: contain;
+    /*如果背景圖有設定寬高，會自適應在設定的寬高內。 */
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.box-img {
+    width: 100%;
+    height: 100%;   
+}   
+
+.chage-img {
+    // background-image: url('../img/IMG_5812.jpg'); 
+    height: 430px;
+
+}
+
+@media(max-width:375px){ 
+    .chage-img { 
+        height: 200px;
+    } 
+}
+
+.item-1:hover{
+    background-color: #ff8b8b;
+    color: #fff;
+}
+.item-2:hover{
+    background-color: #5f8bae;
+    color: #fff;
+}
+.item-3:hover{
+    background-color: #09a5a4;
+    color: #fff;
+}
+.item-4:hover{
+    background-color: #e3a75f;
+    color: #fff;
+}
+
+
+
+
+.footer-icon {
+    height: 40px;
+    width: 50px;
+    background-image: url(../img/arrowheads.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #fff;
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    z-index: 2;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: all 2s;
+
+    animation-name: example;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+
+
+}
+
+@keyframes example {
+    0% {
+        top: 92%;
+    }
+
+    50% {
+        background-color: rgba(255, 255, 255, 0.9);
+        top: 93%;
+        opacity: 0.4;
+    }
+
+    100% {
+        top: 92%;
+        
+    }
+}
+
+
+
+
+.footer {
+    background-color: #fff;
+    margin-top: -1.3%;
+    /* opacity: 1; */
+}
